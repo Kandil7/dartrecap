@@ -6,6 +6,7 @@ void main() {
   print(checker(5));
 
 }
+// simple function
 String checkEvenNumber(num number){
  if(number==1)
  {return "Even Number";}
@@ -14,7 +15,7 @@ String checkEvenNumber(num number){
  else return "number";
  
 }
-
+//arrow syntax with method calls  
 String checkNumber(num num)=>checkEvenNumber(num%2);
-
+// assign function to variable
 String Function(num) checker=checkNumber;
