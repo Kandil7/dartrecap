@@ -5,6 +5,10 @@ void main() {
 
   print(checker(5));
 
+  print(nanosl);
+
+  print(anon(" Kandil"));
+
 }
 // simple function
 String checkEvenNumber(num number){
@@ -19,3 +23,15 @@ String checkEvenNumber(num number){
 String checkNumber(num num)=>checkEvenNumber(num%2);
 // assign function to variable
 String Function(num) checker=checkNumber;
+
+// anonymous functions
+
+// single line 
+final nanosl=()=>5.8+7.2;
+
+// muiltiple line 
+final anon=(String nickname){
+  var name="Mohamed";
+  name +=nickname;
+  return name;
+};
