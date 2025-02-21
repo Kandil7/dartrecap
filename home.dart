@@ -3,6 +3,8 @@ void main() {
 
   print(checkNumber(8));
 
+  print(checker(5));
+
 }
 String checkEvenNumber(num number){
  if(number==1)
@@ -14,3 +16,5 @@ String checkEvenNumber(num number){
 }
 
 String checkNumber(num num)=>checkEvenNumber(num%2);
+
+String Function(num) checker=checkNumber;
