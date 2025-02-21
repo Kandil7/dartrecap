@@ -1,3 +1,5 @@
+import 'dart:math';
+
 void main() {
   print('Hello, World!');
 
@@ -10,6 +12,8 @@ void main() {
   print(anon(" Kandil"));
 
   test((value){print("Number is $value");});
+
+  testInner(22);
 
 }
 // simple function
@@ -43,5 +47,13 @@ final numlist=[1,2,3,4,5,6,7];
 void test(void Function(int) action){
   for (final item in numlist)
     action(item);
+}
+//nested function 
 
+testInner(int value){
+  //nested function
+  int randomVaue()=>Random().nextInt(value);
+ //using the nested function
+  final number=value+randomVaue();
+  print(number);
 }
