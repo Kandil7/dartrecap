@@ -9,6 +9,8 @@ void main() {
 
   print(anon(" Kandil"));
 
+  test((value){print("Number is $value");});
+
 }
 // simple function
 String checkEvenNumber(num number){
@@ -35,3 +37,11 @@ final anon=(String nickname){
   name +=nickname;
   return name;
 };
+
+//function callback
+final numlist=[1,2,3,4,5,6,7];
+void test(void Function(int) action){
+  for (final item in numlist)
+    action(item);
+
+}
