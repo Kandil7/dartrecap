@@ -1,6 +1,6 @@
-import 'dart:math';
 
-void main() {
+import 'dart:math';
+void callMain(){
   print('Hello, World!');
 
   print(checkNumber(8));
