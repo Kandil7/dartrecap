@@ -15,6 +15,8 @@ void main() {
 
   testInner(22);
 
+  printData(loge);
+
 }
 // simple function
 String checkEvenNumber(num number){
@@ -56,4 +58,12 @@ testInner(int value){
  //using the nested function
   final number=value+randomVaue();
   print(number);
+}
+ void loge(String data)=>print(data);
+//using typedef
+
+typedef logger=void Function(String msg);
+
+void printData(logger loge){
+  loge("Done.");
 }
