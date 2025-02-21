@@ -46,11 +46,22 @@ final anon=(String nickname){
 
 //function callback
 final numlist=[1,2,3,4,5,6,7];
+
+/// Executes a given action on each item in the numlist.
+/// 
+/// The [action] parameter is a function that takes an integer as an argument
+/// and performs an operation using that integer.
+
+
 void test(void Function(int) action){
   for (final item in numlist)
     action(item);
 }
 //nested function 
+
+
+/// Generates a random number between 0 and [value] and prints it.
+///
 
 testInner(int value){
   //nested function
