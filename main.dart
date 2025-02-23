@@ -1,4 +1,5 @@
 
+import 'classes/colors.dart';
 import 'classes/fraction.dart';
 import 'classes/person.dart';
 import 'classes/test_class.dart';
@@ -59,6 +60,14 @@ print(test.randomValue());
 
   print(car); // Vehicle{type: Car}
   print(bike); // Vehicle{type: Bike}
+
+   var red1 = ColorObject(ColorType.red);
+  var red2 = ColorObject(ColorType.red);
+
+  print(red1 == red2); // true (لأن الكائن تم إعادة استخدامه)
+
+  print(red1); // ColorObject{name: Red, RGB: #FFFF0000}
+  print(red2); // ColorObject{name: Red, RGB: #FFFF0000}
 
 
 }
