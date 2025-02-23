@@ -2,11 +2,10 @@
 import 'classes/fraction.dart';
 import 'classes/person.dart';
 import 'classes/test_class.dart';
+import 'classes/vehlice.dart';
 
 void main() {
-var customer=Person("Mohamed", "Kandil");
-print(customer.name);
-print(customer.surname);
+
 
 Test test=Test(22,3.8);
 
@@ -49,6 +48,17 @@ print(test.randomValue());
  print(value4.denominator);
  print(value4.numerator);
 
+ // equality operator on factory constructor
+ var person1 = Person('Ahmed');
+  var person2 = Person('Ahmed');
+
+  print(person1 == person2); 
+
+    var car = Vehicle.cache('car');
+  var bike = Vehicle.cache('bike');
+
+  print(car); // Vehicle{type: Car}
+  print(bike); // Vehicle{type: Bike}
 
 
 }
