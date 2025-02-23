@@ -40,5 +40,15 @@ print(test.randomValue());
  var value2=MyFraction.zero();
  print(value2.denominator);
 
+ // redirecting constuctors
+
+ var value3=MyFraction.oneHalf();
+ print(value3.denominator);
+ print(value3.numerator);
+ var value4=MyFraction.whole(4);
+ print(value4.denominator);
+ print(value4.numerator);
+
+
 
 }
