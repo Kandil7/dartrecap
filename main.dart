@@ -1,4 +1,5 @@
 
+import 'classes/fraction.dart';
 import 'classes/person.dart';
 import 'classes/test_class.dart';
 
@@ -33,7 +34,11 @@ test..randomValue()
 ..randomValue();
 print(test.randomValue());
 
-// 
+// named contructor 
+ var value1=MyFraction(0, 1);
+ print(value1.denominator);
+ var value2=MyFraction.zero();
+ print(value2.denominator);
 
 
 }
