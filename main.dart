@@ -7,7 +7,9 @@ var customer=Person("Mohamed", "Kandil");
 print(customer.name);
 print(customer.surname);
 
-Test test=Test();
+Test test=Test(22,3.8);
+
+
 
 print(test.val1);
 print(test.val2);
