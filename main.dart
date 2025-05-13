@@ -15,8 +15,12 @@ import 'classes/person.dart';
 import 'classes/test_class.dart';
 import 'classes/vehlice.dart';
 import 'collections/collections_examples.dart' as collections;
+import 'design_patterns/design_patterns_examples.dart' as design_patterns;
 import 'error_handling/error_handling_examples.dart' as error_handling;
+import 'extensions/extensions_examples.dart' as extensions;
 import 'function_recap/function_recap.dart' as functions;
+import 'mixins/mixins_examples.dart' as mixins;
+import 'null_safety/null_safety_examples.dart' as null_safety;
 
 /// Main function that serves as the entry point for the application
 void main() {
@@ -33,8 +37,12 @@ void main() {
   // async.main();
   // best_practices.main();
   // collections.main();
+  // design_patterns.main();
   // error_handling.main();
+  // extensions.main();
   // functions.callMain();
+  // mixins.main();
+  // null_safety.main();
 }
 
 /// Prints a formatted header with the given title
@@ -60,6 +68,10 @@ void printModuleOptions() {
   print('4. Asynchronous Programming');
   print('5. Error Handling');
   print('6. Dart Best Practices');
+  print('7. Extensions');
+  print('8. Mixins');
+  print('9. Null Safety');
+  print('10. Design Patterns');
   print('\nTo run a specific module, uncomment the corresponding line in main()\n');
 }
 
