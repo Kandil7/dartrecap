@@ -61,7 +61,7 @@ print(test.randomValue());
   print(car); // Vehicle{type: Car}
   print(bike); // Vehicle{type: Bike}
 
-   var red1 = ColorObject(ColorType.red);
+  var red1 = ColorObject(ColorType.red);
   var red2 = ColorObject(ColorType.red);
 
   print(red1 == red2); // true (لأن الكائن تم إعادة استخدامه)
